@@ -19,8 +19,8 @@ Test edit bedroom
     Perform_login_as_admin_user
     navigate_to_bedroom_page_link_left
     #Set_bedroom_id
-    Navigate_to_edit_bedroom
-    Edit_bedroom_info_and_change_bedtype
+    Navigate_to_edit_thefirst_bedroom
+    Edit_all_bedroom_info_and_change_status_type
     perform_logout
 # Test create bedroom
     # Perform_login_as_admin_user

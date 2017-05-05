@@ -17,7 +17,7 @@ Navigate_to_create_bedroom
     Click element                         ${bedroom_pg_btn_create_newbedroom} 
     Page should contain                   ${bedroom_create_pg_lbl} 
     
-Navigate_to_edit_bedroom
+Navigate_to_edit_thefirst_bedroom
     page should contain                   ${bedroom_pg_label_on_page}
     Click element                         ${bedroom_pg_btn_edit_bedroom} 
     Page should contain                   ${bedroom_edit_pg_lbl}  
