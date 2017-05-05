@@ -11,7 +11,6 @@ ${edit_lstbedroom_status_busy}            xpath=//*[@id="bedroomStatusId"]/optio
 ${bedroom_edit-lstbedroom_type}           xpath=//*[@id="typeBedroomId"]
 ${edit_lstbedroom_type_wheelchair}        xpath=//*[@id="typeBedroomId"]/option[6]
 ${bedroom_edit_btnsave}                   xpath=//*[@id="j_idt50"]/a[1]
-${mukerabtn}                              xpath=//*[@id="j_idt50"]/a[1]
 
 
 *** Keywords ***

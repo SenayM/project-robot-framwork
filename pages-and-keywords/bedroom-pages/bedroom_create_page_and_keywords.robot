@@ -11,15 +11,15 @@ ${bedroom_create-lstbedroom_status}         xpath=//*[@id="bedroomStatusId"]
 ${lstbedroom_status_vacant}                 xpath=//*[@id="bedroomStatusId"]/option[2]
 ${bedroom_create-lstbedroom_type}           xpath=//*[@id="typeBedroomId"]
 ${lstbedroom_type_clasicbedking}            xpath=//*[@id="typeBedroomId"]/option[2]
-${bedroom_create-btnsave}                      xpath=//*[@id="j_idt50"]/a[1]
+${bedroom_create-btnsave}                   xpath=//*[@id="j_idt50"]/a[1]
 
 *** Keywords ***
-Create_new_vacant_clasicbedking_bedroom
-    ${bedroom_discription}=             Generate Random String                        8                [LOWER]
-    ${bedroom_floor} =                 Generate Random String                        1                 123456789
+Create_new_vacant_classicbedking_bedroom
+    ${bedroom_discription}=            Generate Random String                        8                [LOWER]
+    ${bedroom_floor} =                 Generate Random String                        1                123456789
     ${roomnumber_postfix} =            Generate Random String                        2                [NUMBERS]
-    ${bedroom_number} =                Catenate      SEPARATOR=             ${bedroom_floor}         ${roomnumber_postfix}   
-    ${bedroom_dailyprice}=             Generate Random String                    4            [NUMBERS]
+    ${bedroom_number} =                Catenate      SEPARATOR=             ${bedroom_floor}          ${roomnumber_postfix}   
+    ${bedroom_dailyprice}=             Generate Random String                        4                [NUMBERS]
     
    
     
