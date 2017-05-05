@@ -15,12 +15,19 @@ Resource                        ./pages-and-keywords/bedroom-pages/bedroom_creat
 Test setup                     Setup
 Test teardown                  Teardown
 ***Test cases***
-Test create bedroom
+Test edit bedroom
     Perform_login_as_admin_user
     navigate_to_bedroom_page_link_left
-    Navigate_to_create_bedroom
-    Create_new_Bedroom
+    #Set_bedroom_id
+    Navigate_to_edit_bedroom
+    Edit_bedroom_info_and_change_bedtype
     perform_logout
+# Test create bedroom
+    # Perform_login_as_admin_user
+    # navigate_to_bedroom_page_link_left
+    # Navigate_to_create_bedroom
+    # Create_new_vacant_clasicbedking_bedroom
+    # perform_logout
 # Test create user
     # Perform_login_as_admin_user
     # navigate_to_user_page_link_left
