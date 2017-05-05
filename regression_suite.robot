@@ -8,6 +8,7 @@ Resource                        ./pages-and-keywords/test_setup_and_teardown.rob
 Resource                        ./pages-and-keywords/page_login.robot
 Resource                        ./pages-and-keywords/page_dashboard.robot
 Resource                        ./pages-and-keywords/user-pages/user_list_page_and_keywords.robot
+Resource                        ./pages-and-keywords/bill-pages/bill_list_page_and_keywords.robot    
 Resource                        ./pages-and-keywords/user-pages/user_create_page_and_keywords.robot
 Resource                        ./pages-and-keywords/bedroom-pages/bedroom_list_page_and_keywords.robot
 Resource                        ./pages-and-keywords/bedroom-pages/bedroom_create_page_and_keywords.robot
@@ -40,6 +41,12 @@ Test edit bedroom
 # Log in as normal Test Case
     # Perform_login_as_normal_user
     # perform_logout
+    
+ Test_view_a_bill
+    perform_login_as_admin_user
+    navigate_to_bill_page_link_left
+    navigate_to_view_bill_form
+    perform_logout
     
 # Test Dashboard
     # perform_login_as_admin_user
