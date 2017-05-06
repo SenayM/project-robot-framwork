@@ -22,12 +22,8 @@ Verify_page_contains_all_elements
     Page should contain element        ${user_create-btnsave}  
     
 Create_new_common_user
-     #${ListLength}=     Select From List                                ${user_create-lstclient}
-    # ${lengeth_of_list_client}=          Get Length	                ${ListLength}
-    # ${lengeth_of_list_userstatus}=      Get Length                   ${user_create-lstuserstatus} 
-     Page should contain                ${user_create_pg_lbl} 
-  #  ${user_create_txtusername} =       Generate Random String                       10                  [LOWER]
-     ${user_create_txtusername} =      Generate Random String                         7                   [LOWER]
+    Page should contain                ${user_create_pg_lbl} 
+    ${user_create_txtusername} =      Generate Random String                         7                   [LOWER]
     Click element                      ${user_create_lstusertype}  
     Click element                      ${user_create_lstusertype_common}           
     Input text                         ${user_create_txtlogin}                     ${user_create_txtusername}
@@ -40,16 +36,11 @@ Create_new_common_user
     Page should contain element        ${user_create-btnsave}
     Page should contain element        ${user_create-btnsave}
     Click element                      ${user_create-btnsave} 
-    Sleep                                1
     page should contain                successfully
 
 Create_new_admin_user
-     ${ListLength}=     Select From List                                ${user_create-lstclient}
-    # ${lengeth_of_list_client}=          Get Length	                ${ListLength}
-    # ${lengeth_of_list_userstatus}=      Get Length                   ${user_create-lstuserstatus} 
-     Page should contain                ${user_create_pg_lbl} 
-  #  ${user_create_txtusername} =       Generate Random String                       10                  [LOWER]
-     ${user_create_txtusername} =      Generate Random String                         7                   [LOWER]
+    Page should contain                ${user_create_pg_lbl} 
+    ${user_create_txtusername} =      Generate Random String                         7                   [LOWER]
     Input text                         ${user_create_txtlogin}                     ${user_create_txtusername}
     Input text                         ${user_create-txtpass}                      pass
     Input text                         ${user_create-txtretypepass}                pass
@@ -59,6 +50,6 @@ Create_new_admin_user
     Click element                      xpath=//*[@id="j_idt50:userStatusId"]/option[2]
     Page should contain element        ${user_create-btnsave}
     Page should contain element        ${user_create-btnsave}
-    Click element                      ${user_create-btnsave} 
-    Sleep                                3
+    Click element                      ${user_create-btnsave}
+    page should contain                successfully 
     
