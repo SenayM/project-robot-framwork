@@ -33,8 +33,8 @@ click_delete_btn_on_client_view_pg_and_verify
 
 click_edit_btn_on_client_view_pg_and_verify    
     Click element                      ${client_view_pg_button_edit}
-    Wait until page contains           ${client_pg_label_on_page_edit}
-    Page should contain                ${client_pg_label_on_page_edit}
+    Wait until page contains           ${client_edit_pg_lbl}
+    Page should contain                ${client_edit_pg_lbl}
     Click element                      ${client_edit_pg_button_save}
     Wait until page contains           ${client_view_pg_msg_edit}
     page should contain                ${client_view_pg_msg_edit}
