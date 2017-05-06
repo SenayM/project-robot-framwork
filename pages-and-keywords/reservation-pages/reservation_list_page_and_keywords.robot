@@ -7,7 +7,7 @@ ${reservation_list_pg_delete_msg_text}              HotelReservation was success
 
 
 *** Keywords ***
-delete_first_reservation_and_assert
+delete_first_reservation_and_verify
     page should contain element                     ${reservation_list_pg_button_delete}
     click element                                   ${reservation_list_pg_button_delete}
     Element text should be                          ${reservation_pg_delete_msg}                     ${reservation_list_pg_delete_msg_text}

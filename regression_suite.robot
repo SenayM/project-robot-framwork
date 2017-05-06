@@ -9,6 +9,8 @@ Resource                        ./pages-and-keywords/page_login.robot
 Resource                        ./pages-and-keywords/page_dashboard.robot
 Resource                        ./pages-and-keywords/user-pages/user_list_page_and_keywords.robot
 Resource                        ./pages-and-keywords/bill-pages/bill_list_page_and_keywords.robot
+Resource                        ./pages-and-keywords/client-pages/client_list_page_and_keywords.robot
+Resource                        ./pages-and-keywords/client-pages/client_view_page_and_keywords.robot
 Resource                        ./pages-and-keywords/reservation-pages/reservation_list_page_and_keywords.robot
 Resource                        ./pages-and-keywords/user-pages/user_create_page_and_keywords.robot
 Resource                        ./pages-and-keywords/bedroom-pages/bedroom_list_page_and_keywords.robot
@@ -46,14 +48,31 @@ Test edit bedroom
  Test_view_a_bill
     perform_login_as_admin_user
     navigate_to_bill_page_link_left
-    view_first_bill_and_assert
+    view_first_bill_and_verify
     perform_logout
  
  Test_delete_a_reservation
     perform_login_as_admin_user
     navigate_to_reservation_page_link_left
-    delete_first_reservation_and_assert
+    delete_first_reservation_and_verify
     perform_logout
+
+Test_all_buttons_on_client_view_page
+    perform_login_as_admin_user
+    navigate_to_client_page_link_left
+    navigate_to_client_view_pg    
+    verify_client_view_page_contains_all_elements
+    click_showall_btn_on_client_view_pg_and_verify
+    navigate_to_client_view_pg
+    click_edit_btn_on_client_view_pg_and_verify
+    navigate_to_client_view_pg
+    click_create_btn_on_client_view_pg_and_verify
+    navigate_to_client_view_pg
+    click_delete_btn_on_client_view_pg_and_verify
+    navigate_to_client_view_pg
+    click_index_btn_on_client_view_pg_and_verify
+    perform_logout
+    
     
 # Test Dashboard
     # perform_login_as_admin_user
