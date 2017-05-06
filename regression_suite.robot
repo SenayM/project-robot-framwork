@@ -22,28 +22,21 @@ Test teardown                  Teardown
 Test edit bedroom
     Perform_login_as_admin_user
     navigate_to_bedroom_page_link_left
-    #Set_bedroom_id
     Navigate_to_edit_thefirst_bedroom
     Edit_all_bedroom_info_and_change_status_type
     perform_logout
-# Test create bedroom
-    # Perform_login_as_admin_user
-    # navigate_to_bedroom_page_link_left
-    # Navigate_to_create_bedroom
-    # Create_new_vacant_clasicbedking_bedroom
-    # perform_logout
-# Test create user
-    # Perform_login_as_admin_user
-    # navigate_to_user_page_link_left
-    # Navigate_to_create_user_form
-    # Create_new_admin_user
-    # perform_logout
-# Log in as admin Test Case
-    # Perform_login_as_admin_user
-    # #perform_logout
-# Log in as normal Test Case
-    # Perform_login_as_normal_user
-    # perform_logout
+Test create bedroom
+    Perform_login_as_admin_user
+    navigate_to_bedroom_page_link_left
+    Navigate_to_create_bedroom
+    Create_new_vacant_clasicbedking_bedroom
+    perform_logout
+Test create user
+    Perform_login_as_admin_user
+    navigate_to_user_page_link_left
+    Navigate_to_create_user_form
+    Create_new_admin_user
+
     
  Test_view_a_bill
     perform_login_as_admin_user
@@ -74,13 +67,3 @@ Test_all_buttons_on_client_view_page
     perform_logout
     
     
-# Test Dashboard
-    # perform_login_as_admin_user
-    # navigate_to_user_page_link_left
-    # navigate_to_reservation_page_link_left
-    # navigate_to_dasboard_page_link_left
-    # navigate_to_client_page_link_left
-    # navigate_to_bill_page_link_left
-    # navigate_to_bedroom_page_link_left
-    # navigate_to_dasboard_top_link 
-    # perform_logout
