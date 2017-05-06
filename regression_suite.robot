@@ -15,11 +15,25 @@ Resource                        ./pages-and-keywords/bedroom-pages/bedroom_creat
 Test setup                     Setup
 Test teardown                  Teardown
 ***Test cases***
+Test create bedroom
+    Perform_login_as_admin_user
+    navigate_to_bedroom_page_link_left
+    Navigate_to_create_bedroom
+    Create_new_vacant_classicbedking_bedroom
+    perform_logout
 Test edit bedroom
     Perform_login_as_admin_user
     navigate_to_bedroom_page_link_left
     Navigate_to_edit_thefirst_bedroom
     Edit_all_bedroom_info_and_change_status_type
+    perform_logout
+
+
+Test create common user
+    Perform_login_as_admin_user
+    navigate_to_user_page_link_left
+    Navigate_to_create_user_form
+    Create_new_common_user
     perform_logout
 
 False Positive test edit client with wrong email format
@@ -35,12 +49,19 @@ Test create bedroom
     Navigate_to_create_bedroom
     Create_new_vacant_classicbedking_bedroom
     perform_logout
-Test create user
+    
+Test create admin user
     Perform_login_as_admin_user
     navigate_to_user_page_link_left
     Navigate_to_create_user_form
     Create_new_admin_user
-
+    perform_logout
+False Positive test edit client with wrong email format
+    Perform_login_as_admin_user
+    Navigate_to_client_page_link_left
+    Navigate_to_edit_client
+    Edit_client_into_wrong_email_format
+    perform_logout
     
  Test_view_a_bill
     perform_login_as_admin_user
