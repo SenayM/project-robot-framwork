@@ -8,10 +8,6 @@ Resource                        ./pages-and-keywords/test_setup_and_teardown.rob
 Resource                        ./pages-and-keywords/page_login.robot
 Resource                        ./pages-and-keywords/page_dashboard.robot
 Resource                        ./pages-and-keywords/user-pages/user_list_page_and_keywords.robot
-Resource                        ./pages-and-keywords/bill-pages/bill_list_page_and_keywords.robot
-Resource                        ./pages-and-keywords/client-pages/client_list_page_and_keywords.robot
-Resource                        ./pages-and-keywords/client-pages/client_view_page_and_keywords.robot
-Resource                        ./pages-and-keywords/reservation-pages/reservation_list_page_and_keywords.robot
 Resource                        ./pages-and-keywords/user-pages/user_create_page_and_keywords.robot
 Resource                        ./pages-and-keywords/bedroom-pages/bedroom_list_page_and_keywords.robot
 Resource                        ./pages-and-keywords/bedroom-pages/bedroom_create_page_and_keywords.robot
@@ -32,11 +28,26 @@ Test edit bedroom
     Edit_all_bedroom_info_and_change_status_type
     perform_logout
 
+
 Test create common user
     Perform_login_as_admin_user
     navigate_to_user_page_link_left
     Navigate_to_create_user_form
     Create_new_common_user
+    perform_logout
+
+False Positive test edit client with wrong email format
+    Perform_login_as_admin_user
+    Navigate_to_client_page_link_left
+    Navigate_to_edit_client
+    Edit_client_into_wrong_email_format
+    perform_logout
+
+Test create bedroom
+    Perform_login_as_admin_user
+    navigate_to_bedroom_page_link_left
+    Navigate_to_create_bedroom
+    Create_new_vacant_classicbedking_bedroom
     perform_logout
     
 Test create admin user
@@ -81,3 +92,4 @@ Test_all_buttons_on_client_view_page
     perform_logout
     
     
+
