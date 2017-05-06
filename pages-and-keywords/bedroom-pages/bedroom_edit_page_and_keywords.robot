@@ -11,7 +11,6 @@ ${edit_lstbedroom_status_busy}            xpath=//*[@id="bedroomStatusId"]/optio
 ${bedroom_edit-lstbedroom_type}           xpath=//*[@id="typeBedroomId"]
 ${edit_lstbedroom_type_wheelchair}        xpath=//*[@id="typeBedroomId"]/option[6]
 ${bedroom_edit_btnsave}                   xpath=//*[@id="j_idt50"]/a[1]
-${mukerabtn}                              xpath=//*[@id="j_idt50"]/a[1]
 
 
 *** Keywords ***
@@ -42,7 +41,6 @@ Edit_all_bedroom_info_and_change_status_type
     Page should contain                  ${bedroom_discription}
     Page should contain                  ${bedroom_floor}
     Page should contain                  ${bedroom_number}
-    Sleep                                1
     
     
     
