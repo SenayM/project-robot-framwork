@@ -1,6 +1,6 @@
 
 *** Settings ***
-Resource                               client_list_page_and_keywords.robot
+Resource                                      client_list_page_and_keywords.robot
 
 *** Variables ***
 ${client_edit_pg_lbl}                         Edit Client
@@ -11,7 +11,7 @@ ${client_edit-optmale}                        xpath=///*[@id="gender:0"]
 ${client_edit-optfemail}                      xpath=//*[@id="gender:1"]
 ${client_edit-txtdsocialsecurity}             xpath=//*[@id="socialSecurityNumber"]
 ${client_edit-btnsave}                        xpath=//*[@id="j_idt51"]/a[1]
-${client_edit_pg_button_save}                   xpath=//*[@id="j_idt51"]/a[1]
+${client_edit_pg_button_save}                 xpath=//*[@id="j_idt51"]/a[1]
 
              
 *** Keywords ***
