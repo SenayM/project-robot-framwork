@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                                 client_view_page_and_keywords.robo
+Resource                                 client_view_page_and_keywords.robot
 Resource                                 client_edit_page_and_keywords.robot
 
 *** Variables ***
