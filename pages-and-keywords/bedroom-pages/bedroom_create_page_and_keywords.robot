@@ -34,4 +34,4 @@ Create_new_vacant_classicbedking_bedroom
     Click element                      ${lstbedroom_type_clasicbedking} 
     Click element                      ${bedroom_create-btnsave}  
     Page should contain                Bedroom was successfully created.
-    Sleep                                3
+    

@@ -41,7 +41,6 @@ Edit_all_bedroom_info_and_change_status_type
     Page should contain                  ${bedroom_discription}
     Page should contain                  ${bedroom_floor}
     Page should contain                  ${bedroom_number}
-    Sleep                                1
     
     
     
