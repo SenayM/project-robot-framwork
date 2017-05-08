@@ -8,7 +8,7 @@ ${bill_list_pg_field_id}                       xpath=//*[@id="j_idt49"]/table/tb
 
 
 *** keywords ***
-view_first_bill_and_assert
+view_first_bill_and_verify
     Page should contain element                ${bill_list_pg_button_view}
     ${bill_list_pg_field_id_text}=             Get Text                                   ${bill_list_pg_field_id}
     Click element                              ${bill_list_pg_button_view}

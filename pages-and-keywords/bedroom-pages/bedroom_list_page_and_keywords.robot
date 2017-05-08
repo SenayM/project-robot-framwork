@@ -12,14 +12,6 @@ ${txt_next}                               Next
 ${bedroom_pg_btn_create_if_morethan10}    xpath=//*[@id="j_idt49"]/a[2]
 *** Keywords ***
 
-# Set_bedroom_id
-    # ${temp}=                            Get text        ${bedroom_list_first_id_no}
-    # Set suite variable       ${bedroom_list_first_id_no}           ${temp}                   
-# Navigate_to_create_bedroom
-    # page should contain                   ${bedroom_pg_label_on_page}
-    # Click element                         ${bedroom_pg_btn_create_newbedroom} 
-    # Page should contain                   ${bedroom_create_pg_lbl} 
-    
 Navigate_to_edit_thefirst_bedroom
     page should contain                   ${bedroom_pg_label_on_page}
     Click element                         ${bedroom_pg_btn_edit_bedroom} 
