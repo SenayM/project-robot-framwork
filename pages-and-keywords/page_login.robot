@@ -4,9 +4,9 @@ Resource                                       page_dashboard.robot
 ***Variable ***
 
 #login Form
-${login_pg_user_textfield}                     id=formLogin:login  
-${login_pg_password_textfield}                 id=formLogin:senha 
-${login_pg_btn_login}                           name=formLogin:j_idt27
+${login_pg_user_textfield}                     id=login  
+${login_pg_password_textfield}                 id=senha 
+${login_pg_btn_login}                           name=loginBtn
 ${login_pg_label_dashboard}                    Hotel Accomodation - login page 
 
 ***Keywords***

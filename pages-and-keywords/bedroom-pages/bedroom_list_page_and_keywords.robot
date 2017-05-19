@@ -4,12 +4,12 @@ Resource                                  bedroom_create_page_and_keywords.robot
 Resource                                  bedroom_edit_page_and_keywords.robot
 *** Variables ***
 ${bedroom_pg_label_on_page}               List
-${bedroom_pg_btn_create_newbedroom}       xpath=//*[@id="j_idt49"]/a[1]
-${bedroom_list_first_id}                  xpath=//*[@id="j_idt49"]/table/tbody/tr[1]/td[1]
-${bedroom_list_first_id_no}               xpath=//*[@id="j_idt49"]/table/tbody/tr[1]/td[1]
-${bedroom_pg_btn_edit_bedroom}            xpath=//*[@id="j_idt49"]/table/tbody/tr[1]/td[8]/a[2]
+${bedroom_pg_btn_create_newbedroom}       xpath=//*[@id="j_idt50"]/a[1]  
+${bedroom_list_first_id}                  xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[1]
+${bedroom_list_first_id_no}               xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[1]
+${bedroom_pg_btn_edit_bedroom}            xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[8]/a[2]
 ${txt_next}                               Next
-${bedroom_pg_btn_create_if_morethan10}    xpath=//*[@id="j_idt49"]/a[2]
+${bedroom_pg_btn_create_if_morethan10}    xpath=//*[@id="j_idt50"]/a[2]
 *** Keywords ***
 
 Navigate_to_edit_thefirst_bedroom

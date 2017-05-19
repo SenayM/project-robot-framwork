@@ -3,8 +3,9 @@ Resource                                      bill_view_page_and_keywords.robot
 
 *** Variables ***
 ${bill_pg_label_on_page}                       List
-${bill_list_pg_button_view}                    xpath=//*[@id="j_idt49"]/table/tbody/tr/td[7]/a[1]
-${bill_list_pg_field_id}                       xpath=//*[@id="j_idt49"]/table/tbody/tr[1]/td[1]
+${bill_list_pg_button_view}                    xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[7]/a[1]
+${bill_list_pg_field_id}                       xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[1]
+
 
 
 *** keywords ***

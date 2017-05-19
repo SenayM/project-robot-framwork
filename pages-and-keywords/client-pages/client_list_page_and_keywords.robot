@@ -4,8 +4,9 @@ Resource                                 client_edit_page_and_keywords.robot
 
 *** Variables ***
 ${client_pg_label_on_page}                List
-${client_pg_btn_edit_client}              xpath=//*[@id="j_idt49"]/table/tbody/tr[1]/td[7]/a[2]
-${client_list_pg_button_view}             xpath=//*[@id="j_idt49"]/table/tbody/tr[1]/td[7]/a[1]
+${client_pg_btn_edit_client}              xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[7]/a[2]
+${client_list_pg_button_view}             xpath=//*[@id="j_idt50"]/table/tbody/tr[1]/td[7]/a[1]
+
 
 *** Keywords ***
 Navigate_to_edit_client

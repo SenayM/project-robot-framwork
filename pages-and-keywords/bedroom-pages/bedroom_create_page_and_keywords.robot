@@ -3,7 +3,7 @@ Resource                                    bedroom_list_page_and_keywords.robot
 Library                                     Collections
 *** Variables ***
 ${bedroom_create_pg_lbl}                    Create New Bedroom
-${bedroom_create_txtdescription}            xpath=//*[@id="description"]  
+${bedroom_create_txtdescription}            xpath=//*[@id="description"] 
 ${bedroom_create-txtfloor}                  xpath=//*[@id="floor"]
 ${bedroom_create-txtnumber}                 xpath=//*[@id="number"]
 ${bedroom_create-txtdailyprice}             xpath=//*[@id="priceDaily"]
@@ -11,7 +11,7 @@ ${bedroom_create-lstbedroom_status}         xpath=//*[@id="bedroomStatusId"]
 ${lstbedroom_status_vacant}                 xpath=//*[@id="bedroomStatusId"]/option[2]
 ${bedroom_create-lstbedroom_type}           xpath=//*[@id="typeBedroomId"]
 ${lstbedroom_type_clasicbedking}            xpath=//*[@id="typeBedroomId"]/option[2]
-${bedroom_create-btnsave}                   xpath=//*[@id="j_idt50"]/a[1]
+${bedroom_create-btnsave}                   xpath=//*[@id="saveBtn"]
 
 *** Keywords ***
 Create_new_vacant_classicbedking_bedroom
