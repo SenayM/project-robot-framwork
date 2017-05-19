@@ -29,19 +29,19 @@ Test create bedroom
     # perform_logout
 
 
-Test create common user
-    Perform_login_as_admin_user
-    navigate_to_user_page_link_left
-    Navigate_to_create_user_form
-    Create_new_common_user
-    perform_logout
+# Test create common user
+    # Perform_login_as_admin_user
+    # navigate_to_user_page_link_left
+    # Navigate_to_create_user_form
+    # Create_new_common_user
+    # perform_logout
 
-Test create admin user
-    Perform_login_as_admin_user
-    navigate_to_user_page_link_left
-    Navigate_to_create_user_form
-    Create_new_admin_user
-    perform_logout
+# Test create admin user
+    # Perform_login_as_admin_user
+    # navigate_to_user_page_link_left
+    # Navigate_to_create_user_form
+    # Create_new_admin_user
+    # perform_logout
     
 # False Positive test edit client with wrong email format
     # Perform_login_as_admin_user
@@ -50,11 +50,11 @@ Test create admin user
     # Edit_client_into_wrong_email_format
     # perform_logout
     
- Test_view_a_bill
-    perform_login_as_admin_user
-    navigate_to_bill_page_link_left
-    view_first_bill_and_verify
-    perform_logout
+ # Test_view_a_bill
+    # perform_login_as_admin_user
+    # navigate_to_bill_page_link_left
+    # view_first_bill_and_verify
+    # perform_logout
  
  # Test_delete_a_reservation
     # perform_login_as_admin_user
